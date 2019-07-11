@@ -6,6 +6,7 @@ import com.joker.bookCMS.biz.impl.BookBizImpl;
 import com.joker.bookCMS.biz.impl.CategoryBizImpl;
 import com.joker.bookCMS.entity.Book;
 import com.joker.bookCMS.entity.Category;
+import com.sun.org.apache.bcel.internal.generic.NEW;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.FileUploadException;
@@ -18,7 +19,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class BookController {
@@ -41,12 +44,13 @@ public class BookController {
     }
 
     //  /admin/Book/add.do
-    public void add(HttpServletRequest request, HttpServletResponse response) throws FileUploadException, UnsupportedEncodingException {
+    public void add(HttpServletRequest request, HttpServletResponse response) throws FileUploadException, IOException {
         List<String> name = new ArrayList<>();
         List<String> cid = new ArrayList<>();
         List<String> level = new ArrayList<>();
         List<String> price = new ArrayList<>();
         List<String> imgPath = new ArrayList<>();
+        List<Book> books = new ArrayList<>();
 
         FileItemFactory factory = new DiskFileItemFactory();
         ServletFileUpload upload = new ServletFileUpload(factory);
@@ -70,16 +74,17 @@ public class BookController {
             } else {
                 if (item.getFieldName().equals("smallImg")) {
                     if (item.getSize() <= 100) {
-                        imgPath.add(" ");
+                        imgPath.add("");
                         continue;
                     } else {
-                        String rootPath = "";
+                        String rootPath = request.getContextPath();
                         String path = item.getName();
                         String type = ".jpg";
                         if (path.indexOf(".") != -1) {
                             type = path.substring(path.lastIndexOf("."));
                         }
                         path = "/download/images/" + System.currentTimeMillis() + type;
+                        imgPath.add(path);
                         try {
                             item.write(new File(rootPath + path));
                         } catch (Exception e) {
@@ -89,5 +94,18 @@ public class BookController {
                 }
             }
         }
+        for (int i = 0; i < name.size() - 1; i++) {
+            Book book = new Book();
+            book.setName(name.get(i));
+            book.setCid(Integer.parseInt(cid.get(i)));
+            book.setLevel(Integer.parseInt(level.get(i)));
+            book.setPrice(Integer.parseInt(price.get(i)));
+            book.setImgPath(imgPath.get(i));
+            book.setCreateTime(new Timestamp(new Date().getTime()));
+            book.setUpdateTime(new Timestamp(new Date().getTime()));
+            books.add(book);
+        }
+        bookBiz.batchInsert(books);
+        response.sendRedirect(request.getContextPath() + "/admin/Book/list.do");
     }
 }

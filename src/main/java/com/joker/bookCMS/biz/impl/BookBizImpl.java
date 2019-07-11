@@ -15,4 +15,9 @@ public class BookBizImpl implements BookBiz {
     public List<Book> getList() {
         return bookDao.findAll();
     }
+
+    @Override
+    public void batchInsert(List<Book> list) {
+        bookDao.batchInsert(list);
+    }
 }

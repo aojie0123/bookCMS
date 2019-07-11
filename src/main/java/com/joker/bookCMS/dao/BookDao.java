@@ -1,7 +1,6 @@
 package com.joker.bookCMS.dao;
 
 import com.joker.bookCMS.entity.Book;
-import com.joker.bookCMS.entity.Category;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
@@ -25,10 +24,10 @@ public interface BookDao {
     List<Book> findAll();
 
     @Insert("<script>" +
-            "INSERT INTO book (name, create_time, update_time)" +
-            "<foreach collection='list' item='category' separator=','>" +
-            "(#{category.name}, #{category.createTime}, #{category.updateTime})" +
+            "INSERT INTO book (category_id, name, level, price, img_path, create_time, update_time) VALUES " +
+            "<foreach collection='list' item='book' separator=','>" +
+            "(#{book.cid}, #{book.name}, #{book.level}, #{book.price}, #{book.imgPath}, #{book.createTime}, #{book.updateTime})" +
             "</foreach>" +
             "</script>")
-    void batchInsert(List<Category> list);
+    void batchInsert(List<Book> list);
 }

@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface BookBiz {
     List<Book> getList();
+    void batchInsert(List<Book> list);
 }
