@@ -7,13 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20c5c21a-11f8-4ced-9b15-7a2d3b962780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/biz/BookBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/biz/BookBiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/biz/impl/BookBizImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/biz/impl/BookBizImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/dao/BookDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bookCMS-1.0-SNAPSHOT/WEB-INF/classes/com/joker/bookCMS/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookCMS-1.0-SNAPSHOT/WEB-INF/classes/com/joker/bookCMS/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/add_book.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/add_book.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bookCMS-1.0-SNAPSHOT/WEB-INF/classes/com/joker/bookCMS/biz/BookBiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookCMS-1.0-SNAPSHOT/WEB-INF/classes/com/joker/bookCMS/biz/BookBiz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bookCMS-1.0-SNAPSHOT/WEB-INF/classes/com/joker/bookCMS/biz/impl/BookBizImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookCMS-1.0-SNAPSHOT/WEB-INF/classes/com/joker/bookCMS/biz/impl/BookBizImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bookCMS-1.0-SNAPSHOT/WEB-INF/classes/com/joker/bookCMS/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/bookCMS-1.0-SNAPSHOT/WEB-INF/classes/com/joker/bookCMS/dao/BookDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/joker/bookCMS/biz/BookBiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/joker/bookCMS/biz/BookBiz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/joker/bookCMS/biz/impl/BookBizImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/joker/bookCMS/biz/impl/BookBizImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/joker/bookCMS/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/joker/bookCMS/dao/BookDao.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/joker/bookCMS/controller/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
+            <state relative-caret-position="396">
+              <caret line="115" column="35" lean-forward="true" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,10 +54,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/add_book.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1157">
-              <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
+            <state relative-caret-position="304">
+              <caret line="102" column="146" selection-start-line="102" selection-start-column="146" selection-end-line="102" selection-end-column="146" />
               <folding>
-                <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
+                <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/joker/bookCMS/biz/BookBiz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
+            <state relative-caret-position="114">
               <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -76,22 +78,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/joker/bookCMS/biz/impl/BookBizImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="228">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#494#495#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/joker/bookCMS/dao/BookDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="26" column="107" selection-start-line="26" selection-start-column="107" selection-end-line="26" selection-end-column="107" />
+            <state relative-caret-position="380">
+              <caret line="26" column="110" selection-start-line="26" selection-start-column="110" selection-end-line="26" selection-end-column="110" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/joker/bookCMS/dao/CategoryDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="114">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,12 +155,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/dao/CategoryDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/img/add_book.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/add_book.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/biz/BookBiz.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/biz/impl/BookBizImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/add_book.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/controller/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/dao/BookDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/add_book.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/joker/bookCMS/controller/BookController.java" />
       </list>
     </option>
   </component>
@@ -188,6 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -329,11 +332,16 @@
               <item name="bookCMS" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bookCMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bookCMS" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="bookCMS-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,7 +534,8 @@
       <workItem from="1562822895849" duration="212000" />
       <workItem from="1562823173022" duration="11720000" />
       <workItem from="1562835059070" duration="1300000" />
-      <workItem from="1562836970005" duration="1826000" />
+      <workItem from="1562836970005" duration="2072000" />
+      <workItem from="1562893339441" duration="3653000" />
     </task>
     <task id="LOCAL-00001" summary="build project">
       <created>1562834501120</created>
@@ -535,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562834501120</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="admin complete">
+      <created>1562838967400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562838967400</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -547,13 +563,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19598000" />
+    <option name="totallyTimeSpent" value="23497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49821427" visible="true" weight="0.15565032" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49821427" visible="true" weight="0.15724947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -564,7 +580,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39914164" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -572,7 +588,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32939914" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.3290461" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32832617" />
@@ -592,7 +608,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="build project" />
-    <option name="LAST_COMMIT_MESSAGE" value="build project" />
+    <MESSAGE value="admin complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin complete" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/form.css">
@@ -748,23 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/joker/bookCMS/dao/CategoryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/add_book.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1596">
@@ -776,29 +776,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/add_book.jsp">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1157">
-          <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
-          <folding>
-            <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/joker/bookCMS/controller/BookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="931">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/joker/bookCMS/biz/BookBiz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="114">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -808,20 +795,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/joker/bookCMS/biz/impl/BookBizImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="228">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/joker/bookCMS/dao/BookDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="107" selection-start-line="26" selection-start-column="107" selection-end-line="26" selection-end-column="107" />
+        <state relative-caret-position="380">
+          <caret line="26" column="110" selection-start-line="26" selection-start-column="110" selection-end-line="26" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joker/bookCMS/dao/CategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/add_book.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="102" column="146" selection-start-line="102" selection-start-column="146" selection-end-line="102" selection-end-column="146" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/joker/bookCMS/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="115" column="35" lean-forward="true" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,10 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ymkj
-  Date: 2019/7/11
-  Time: 15:49
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="com.joker.bookCMS.entity.Category" %>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <html>
@@ -103,9 +98,12 @@
             '                <div class="form-group">\n' +
             '                    <label class="col-sm-2 control-label">分类 ：</label>\n' +
             '                    <select name="categoryId" class="col-sm-2 form-control" style="width: auto">\n' +
-            '                        <c:forEach var="item" items="${categories}">\n' +
-            '                            <option id="${item.id}" value="${item.id}">${item.name}</option>\n' +
-            '                        </c:forEach>\n' +
+                                    <%
+                                        for (Category category : (List<Category>)request.getAttribute("list")) {
+                                            String option = "\'<option value=\""+ category.getId() +"\">" + category.getName() + "</option>\'\n + ";
+                                            out.println(option);
+                                        }
+                                    %>
             '                    </select>\n' +
             '                </div>\n' +
             '                <div class="form-group">\n' +

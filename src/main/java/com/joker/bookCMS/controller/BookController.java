@@ -94,13 +94,21 @@ public class BookController {
                 }
             }
         }
-        for (int i = 0; i < name.size() - 1; i++) {
+        for (int i = 0; i < name.size(); i++) {
             Book book = new Book();
             book.setName(name.get(i));
-            book.setCid(Integer.parseInt(cid.get(i)));
-            book.setLevel(Integer.parseInt(level.get(i)));
-            book.setPrice(Integer.parseInt(price.get(i)));
-            book.setImgPath(imgPath.get(i));
+            if (cid.get(i) != null) {
+                book.setCid(Integer.parseInt(cid.get(i)));
+            }
+            if (level.get(i) != null) {
+                book.setLevel(Integer.parseInt(level.get(i)));
+            }
+            if (price.get(i) != null) {
+                book.setPrice(Integer.parseInt(price.get(i)));
+            }
+            if (imgPath.get(i) != null) {
+                book.setImgPath(imgPath.get(i));
+            }
             book.setCreateTime(new Timestamp(new Date().getTime()));
             book.setUpdateTime(new Timestamp(new Date().getTime()));
             books.add(book);
